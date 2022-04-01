@@ -87,7 +87,7 @@ Nutritional application where users can customized their lifestyle or medical di
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://cdn.discordapp.com/attachments/880305507326373951/959439752552124416/IMG_0276.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 <img src="https://cdn.discordapp.com/attachments/944684807928053860/959266115060641832/Nutriway_Wireframe.jpg" width=600>
