@@ -54,45 +54,79 @@ Nutritional application where users can customized their lifestyle or medical di
     * User can add specific foods to track their food and nutritional intake
 * Profile
     * User can see their nutritional progress
+* Favorites Screen
+  * User can see their favorite recipes here.
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
 * Stream
-* Creation
 * Profile
+* Creation
+* Favorites Screen
 * Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* Login
-   * Stream
-* Register
-   * Stream
+*  Forced Login
+   * User needs to create an account if they do not have one already. Shows registration screen.
+   * Transitions to Home Screen
 * Stream
-    * Detail
-        * Creation
-* Creation
-    * Detail
+   * User sees a view of recipes that are on their personal feed.
+   * -> Recipe Detail (jumps to detail screen if user clicks on recipe)
+      * Detailed description of clicked recipe.
+   * -> Recipe Creation (user can also create recipes here)
 * Profile
-    * Settings
-    * Detail
-* Settings
+   * -> Recipe Detail
+* Creation
+   * Modify text and image fields here.
+* Favorites Screen
+   * -> Recipe Detail
+* Settings (toggles)
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+<img src="https://cdn.discordapp.com/attachments/944684807928053860/959266115060641832/Nutriway_Wireframe.jpg" width=600>
 
 ### [BONUS] Interactive Prototype
 
-## Schema 
-[This section will be completed in Unit 9]
+## Schema
 ### Models
-[Add table of models]
+Recipes
+| Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | recipeId      | String   | unique id for recipe post (default field) |
+   | recipeImage   | File     | image for recipe |
+   | recipeAuthor  | pointer  | author of recipe |
+   | recipeDesc    | String   | recipe description by author |
+   | recipeValue   | Dict     | Nutritional value of recipe sorted by dietary counts |
+   | recipeName    | String   | Name of recipe |
+
+User
+| Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userName      | String   | Name of user |
+   | userID        | String   | unique id for a certain user |
+   | userHistory   | Dict     | int:list dictionary that keeps user's food intake by day |
+   | userNutrition | Dict     | int:dict dictionary that keeps user's food nutr. by day |
+   | userFavorites | List     | List of user's favorite recipes |
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+* Stream Screen
+  * (Read/GET) Query all recent recipes
+  * (Create/POST) Create new like on recipe
+  * (DELETE) Delete like on recipe
+  * (Update/PUT) Update user's list of favorite recipes
+* Profile Screen
+  * (Read/GET) Query user's nutritional status
+  * (Read/GET) User's food history
+  * (DELETE) User's choice of deleting something from their food history
+* Creation Screen
+  * (Create/POST) Create new recipe
+* Detail Screen
+  * (Update/PUT) Update user's nutritional status
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
