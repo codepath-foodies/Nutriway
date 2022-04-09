@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70E109A9E35D943E88F6165B /* Pods_CodePath_NutriwayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB805B3860727C878E4D888 /* Pods_CodePath_NutriwayTests.framework */; };
+		84DD52A028005FB1001FDE75 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD529F28005FB1001FDE75 /* APIKeys.swift */; };
+		8E4C6BB848F41FEB13F65E6D /* Pods_CodePath_Nutriway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D261F421BD57E1915FDB338D /* Pods_CodePath_Nutriway.framework */; };
+		914CCA53113AF77FE9075637 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E42C64780E5B0A4E0FD767 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework */; };
 		FD3212CC27FFDDE500E25433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3212CB27FFDDE500E25433 /* AppDelegate.swift */; };
 		FD3212CE27FFDDE500E25433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3212CD27FFDDE500E25433 /* SceneDelegate.swift */; };
 		FD3212D027FFDDE500E25433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3212CF27FFDDE500E25433 /* ViewController.swift */; };
@@ -36,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37E42C64780E5B0A4E0FD767 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FD9A5283C51B822042E461 /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig"; path = "Target Support Files/Pods-CodePath-Nutriway-CodePath-NutriwayUITests/Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BA37E9096ED8197F589905C /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodePath-Nutriway-CodePath-NutriwayUITests/Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84DD529F28005FB1001FDE75 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		9A808A64D17778FAA3AEE649 /* Pods-CodePath-NutriwayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-NutriwayTests.release.xcconfig"; path = "Target Support Files/Pods-CodePath-NutriwayTests/Pods-CodePath-NutriwayTests.release.xcconfig"; sourceTree = "<group>"; };
+		B127F6BA11EA3CB1BC2EE2DB /* Pods-CodePath-NutriwayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-NutriwayTests.debug.xcconfig"; path = "Target Support Files/Pods-CodePath-NutriwayTests/Pods-CodePath-NutriwayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF27879A85B23AD128774A0 /* Pods-CodePath-Nutriway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Nutriway.debug.xcconfig"; path = "Target Support Files/Pods-CodePath-Nutriway/Pods-CodePath-Nutriway.debug.xcconfig"; sourceTree = "<group>"; };
+		D261F421BD57E1915FDB338D /* Pods_CodePath_Nutriway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodePath_Nutriway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB805B3860727C878E4D888 /* Pods_CodePath_NutriwayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodePath_NutriwayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8CE5EE4DAB1CB71E2C8BD3 /* Pods-CodePath-Nutriway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Nutriway.release.xcconfig"; path = "Target Support Files/Pods-CodePath-Nutriway/Pods-CodePath-Nutriway.release.xcconfig"; sourceTree = "<group>"; };
 		FD3212C827FFDDE500E25433 /* CodePath-Nutriway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodePath-Nutriway.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3212CB27FFDDE500E25433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD3212CD27FFDDE500E25433 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4C6BB848F41FEB13F65E6D /* Pods_CodePath_Nutriway.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E109A9E35D943E88F6165B /* Pods_CodePath_NutriwayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914CCA53113AF77FE9075637 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E98E242023B4B18B95C1AF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBF27879A85B23AD128774A0 /* Pods-CodePath-Nutriway.debug.xcconfig */,
+				EB8CE5EE4DAB1CB71E2C8BD3 /* Pods-CodePath-Nutriway.release.xcconfig */,
+				7BA37E9096ED8197F589905C /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig */,
+				41FD9A5283C51B822042E461 /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig */,
+				B127F6BA11EA3CB1BC2EE2DB /* Pods-CodePath-NutriwayTests.debug.xcconfig */,
+				9A808A64D17778FAA3AEE649 /* Pods-CodePath-NutriwayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F36B431211387055349EFEEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D261F421BD57E1915FDB338D /* Pods_CodePath_Nutriway.framework */,
+				37E42C64780E5B0A4E0FD767 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework */,
+				EAB805B3860727C878E4D888 /* Pods_CodePath_NutriwayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD3212BF27FFDDE500E25433 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +123,8 @@
 				FD3212E127FFDDE600E25433 /* CodePath-NutriwayTests */,
 				FD3212EB27FFDDE600E25433 /* CodePath-NutriwayUITests */,
 				FD3212C927FFDDE500E25433 /* Products */,
+				5E98E242023B4B18B95C1AF6 /* Pods */,
+				F36B431211387055349EFEEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +148,7 @@
 				FD3212D427FFDDE600E25433 /* Assets.xcassets */,
 				FD3212D627FFDDE600E25433 /* LaunchScreen.storyboard */,
 				FD3212D927FFDDE600E25433 /* Info.plist */,
+				84DD529F28005FB1001FDE75 /* APIKeys.swift */,
 			);
 			path = "CodePath-Nutriway";
 			sourceTree = "<group>";
@@ -134,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3212F227FFDDE600E25433 /* Build configuration list for PBXNativeTarget "CodePath-Nutriway" */;
 			buildPhases = (
+				3110362D15DD4DB1A8F5204A /* [CP] Check Pods Manifest.lock */,
 				FD3212C427FFDDE500E25433 /* Sources */,
 				FD3212C527FFDDE500E25433 /* Frameworks */,
 				FD3212C627FFDDE500E25433 /* Resources */,
+				680DACFD21C07CA5E5352336 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3212F527FFDDE600E25433 /* Build configuration list for PBXNativeTarget "CodePath-NutriwayTests" */;
 			buildPhases = (
+				183177D9E6B7A1448DEAF5A5 /* [CP] Check Pods Manifest.lock */,
 				FD3212DA27FFDDE600E25433 /* Sources */,
 				FD3212DB27FFDDE600E25433 /* Frameworks */,
 				FD3212DC27FFDDE600E25433 /* Resources */,
@@ -169,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3212F827FFDDE600E25433 /* Build configuration list for PBXNativeTarget "CodePath-NutriwayUITests" */;
 			buildPhases = (
+				CE18108A96F35EA07F08C879 /* [CP] Check Pods Manifest.lock */,
 				FD3212E427FFDDE600E25433 /* Sources */,
 				FD3212E527FFDDE600E25433 /* Frameworks */,
 				FD3212E627FFDDE600E25433 /* Resources */,
+				00FAFDAF01324DE272AC25EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +301,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FAFDAF01324DE272AC25EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodePath-Nutriway-CodePath-NutriwayUITests/Pods-CodePath-Nutriway-CodePath-NutriwayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodePath-Nutriway-CodePath-NutriwayUITests/Pods-CodePath-Nutriway-CodePath-NutriwayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodePath-Nutriway-CodePath-NutriwayUITests/Pods-CodePath-Nutriway-CodePath-NutriwayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		183177D9E6B7A1448DEAF5A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodePath-NutriwayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3110362D15DD4DB1A8F5204A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodePath-Nutriway-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		680DACFD21C07CA5E5352336 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodePath-Nutriway/Pods-CodePath-Nutriway-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodePath-Nutriway/Pods-CodePath-Nutriway-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodePath-Nutriway/Pods-CodePath-Nutriway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE18108A96F35EA07F08C879 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodePath-Nutriway-CodePath-NutriwayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD3212C427FFDDE500E25433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +411,7 @@
 			files = (
 				FD3212D027FFDDE500E25433 /* ViewController.swift in Sources */,
 				FD3212CC27FFDDE500E25433 /* AppDelegate.swift in Sources */,
+				84DD52A028005FB1001FDE75 /* APIKeys.swift in Sources */,
 				FD3212CE27FFDDE500E25433 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +586,7 @@
 		};
 		FD3212F327FFDDE600E25433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF27879A85B23AD128774A0 /* Pods-CodePath-Nutriway.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +615,7 @@
 		};
 		FD3212F427FFDDE600E25433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8CE5EE4DAB1CB71E2C8BD3 /* Pods-CodePath-Nutriway.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +644,7 @@
 		};
 		FD3212F627FFDDE600E25433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B127F6BA11EA3CB1BC2EE2DB /* Pods-CodePath-NutriwayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +665,7 @@
 		};
 		FD3212F727FFDDE600E25433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A808A64D17778FAA3AEE649 /* Pods-CodePath-NutriwayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +686,7 @@
 		};
 		FD3212F927FFDDE600E25433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA37E9096ED8197F589905C /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +705,7 @@
 		};
 		FD3212FA27FFDDE600E25433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FD9A5283C51B822042E461 /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

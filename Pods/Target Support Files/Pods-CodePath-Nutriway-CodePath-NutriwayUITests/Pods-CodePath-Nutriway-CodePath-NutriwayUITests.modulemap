@@ -1,0 +1,6 @@
+framework module Pods_CodePath_Nutriway_CodePath_NutriwayUITests {
+  umbrella header "Pods-CodePath-Nutriway-CodePath-NutriwayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
