@@ -130,3 +130,9 @@ User
 * Detail Screen
   * (Update/PUT) Update user's nutritional status
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+## App Progress
+### Milestone 1
+For this week, we focused on setting up the necessary backend components and imagining some of the login and registration screen. Focus on storyboard and view controller design will follow next week.
+
+<img src='https://i.imgur.com/30igOIQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
