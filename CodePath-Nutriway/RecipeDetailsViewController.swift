@@ -1,24 +1,28 @@
 //
-//  WelcomeViewController.swift
+//  RecipeDetailsViewController.swift
 //  CodePath-Nutriway
 //
-//  Created by Samantha Sanchez on 4/8/22.
+//  Created by Admin Mac on 4/15/22.
 //
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class RecipeDetailsViewController: UIViewController {
 
+    @IBOutlet weak var recipeImage: UIImageView!
+    @IBOutlet weak var recipeName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func finishWelcome(_ sender: Any) {
+    @IBAction func addNutrition(_ sender: Any) {
         
     }
     
+
     /*
     // MARK: - Navigation
 
