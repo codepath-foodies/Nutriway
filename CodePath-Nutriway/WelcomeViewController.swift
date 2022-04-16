@@ -15,7 +15,10 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func finishWelcome(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
