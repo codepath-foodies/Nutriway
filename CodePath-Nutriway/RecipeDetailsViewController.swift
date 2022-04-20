@@ -6,17 +6,56 @@
 //
 
 import UIKit
+import Foundation
 
 class RecipeDetailsViewController: UIViewController {
 
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeName: UILabel!
+    @IBOutlet weak var recipeInstructions: UILabel!
+    
+    @IBOutlet weak var carbsAmount: UILabel!
+    @IBOutlet weak var proteinAmount: UILabel!
+    @IBOutlet weak var fatAmount: UILabel!
+    @IBOutlet weak var caloriesAmount: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https://api.spoonacular.com/recipes/1003464/nutritionWidget.json/?apiKey=\(API_KEY)")
+        
+        var request = URLRequest(url: url!,
+                                cachePolicy: .useProtocolCachePolicy,
+                                timeoutInterval: 10.0)
 
-        // Do any additional setup after loading the view.
+        
+        request.httpMethod = "GET"
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            
+            if error == nil && data != nil {
+                do {
+                    let dictionary = try (JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [String:Any])!
+                    DispatchQueue.main.async{
+                    
+                        self.carbsAmount.text = dictionary["carbs"] as? String
+                        self.proteinAmount.text = dictionary["protein"] as? String
+                        self.fatAmount.text = dictionary["fat"] as? String
+                        self.caloriesAmount.text = dictionary["calories"] as? String
+                    }
+                    
+                }
+                catch{
+                    print("Error parsing response data")
+                }
+            }
+        }
+
+        dataTask.resume()
+        
     }
+    
     
     @IBAction func addNutrition(_ sender: Any) {
         
