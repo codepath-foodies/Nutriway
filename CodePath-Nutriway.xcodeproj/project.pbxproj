@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0C27B32D280117540065FA5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C27B32C280117540065FA5E /* LoginViewController.swift */; };
 		0C27B32F280117600065FA5E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C27B32E280117600065FA5E /* WelcomeViewController.swift */; };
-		0C27B3312801176C0065FA5E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C27B3302801176C0065FA5E /* FeedViewController.swift */; };
 		0C432C54280A77B700492761 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C432C53280A77B700492761 /* APIKeys.swift */; };
 		0C432C58280A97A900492761 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C432C57280A97A900492761 /* FavoritesTableViewController.swift */; };
 		70E109A9E35D943E88F6165B /* Pods_CodePath_NutriwayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB805B3860727C878E4D888 /* Pods_CodePath_NutriwayTests.framework */; };
 		84DD52A228098008001FDE75 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD52A128098008001FDE75 /* RecipeDetailsViewController.swift */; };
+		84DD52AE281353DD001FDE75 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD52AD281353DD001FDE75 /* RecipeCell.swift */; };
+		84DD52B42813625C001FDE75 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD52B32813625C001FDE75 /* FeedViewController.swift */; };
 		8E4C6BB848F41FEB13F65E6D /* Pods_CodePath_Nutriway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D261F421BD57E1915FDB338D /* Pods_CodePath_Nutriway.framework */; };
 		914CCA53113AF77FE9075637 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E42C64780E5B0A4E0FD767 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework */; };
 		FD3212CC27FFDDE500E25433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3212CB27FFDDE500E25433 /* AppDelegate.swift */; };
@@ -47,13 +48,14 @@
 /* Begin PBXFileReference section */
 		0C27B32C280117540065FA5E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0C27B32E280117600065FA5E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		0C27B3302801176C0065FA5E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0C432C53280A77B700492761 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		0C432C57280A97A900492761 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		37E42C64780E5B0A4E0FD767 /* Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodePath_Nutriway_CodePath_NutriwayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FD9A5283C51B822042E461 /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig"; path = "Target Support Files/Pods-CodePath-Nutriway-CodePath-NutriwayUITests/Pods-CodePath-Nutriway-CodePath-NutriwayUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7BA37E9096ED8197F589905C /* Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodePath-Nutriway-CodePath-NutriwayUITests/Pods-CodePath-Nutriway-CodePath-NutriwayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84DD52A128098008001FDE75 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		84DD52AD281353DD001FDE75 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		84DD52B32813625C001FDE75 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9A808A64D17778FAA3AEE649 /* Pods-CodePath-NutriwayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-NutriwayTests.release.xcconfig"; path = "Target Support Files/Pods-CodePath-NutriwayTests/Pods-CodePath-NutriwayTests.release.xcconfig"; sourceTree = "<group>"; };
 		B127F6BA11EA3CB1BC2EE2DB /* Pods-CodePath-NutriwayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-NutriwayTests.debug.xcconfig"; path = "Target Support Files/Pods-CodePath-NutriwayTests/Pods-CodePath-NutriwayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBF27879A85B23AD128774A0 /* Pods-CodePath-Nutriway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePath-Nutriway.debug.xcconfig"; path = "Target Support Files/Pods-CodePath-Nutriway/Pods-CodePath-Nutriway.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,9 +163,10 @@
 				FD3212D927FFDDE600E25433 /* Info.plist */,
 				0C27B32C280117540065FA5E /* LoginViewController.swift */,
 				0C27B32E280117600065FA5E /* WelcomeViewController.swift */,
-				0C27B3302801176C0065FA5E /* FeedViewController.swift */,
 				84DD52A128098008001FDE75 /* RecipeDetailsViewController.swift */,
 				0C432C57280A97A900492761 /* FavoritesTableViewController.swift */,
+				84DD52AD281353DD001FDE75 /* RecipeCell.swift */,
+				84DD52B32813625C001FDE75 /* FeedViewController.swift */,
 			);
 			path = "CodePath-Nutriway";
 			sourceTree = "<group>";
@@ -426,13 +429,14 @@
 			files = (
 				FD3212D027FFDDE500E25433 /* ViewController.swift in Sources */,
 				FD3212CC27FFDDE500E25433 /* AppDelegate.swift in Sources */,
+				84DD52B42813625C001FDE75 /* FeedViewController.swift in Sources */,
 				84DD52A228098008001FDE75 /* RecipeDetailsViewController.swift in Sources */,
 				0C432C58280A97A900492761 /* FavoritesTableViewController.swift in Sources */,
 				0C432C54280A77B700492761 /* APIKeys.swift in Sources */,
+				84DD52AE281353DD001FDE75 /* RecipeCell.swift in Sources */,
 				0C27B32F280117600065FA5E /* WelcomeViewController.swift in Sources */,
 				0C27B32D280117540065FA5E /* LoginViewController.swift in Sources */,
 				FD3212CE27FFDDE500E25433 /* SceneDelegate.swift in Sources */,
-				0C27B3312801176C0065FA5E /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,10 +19,13 @@ class RecipeDetailsViewController: UIViewController {
     @IBOutlet weak var fatAmount: UILabel!
     @IBOutlet weak var caloriesAmount: UILabel!
     
+    var recipe: [String: Any]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = URL(string: "https://api.spoonacular.com/recipes/1003464/nutritionWidget.json/?apiKey=\(API_KEY)")
+        let recipeId = recipe["id"] as! Int
+        let stringId = String(recipeId)
+        let url = URL(string: "https://api.spoonacular.com/recipes/\(stringId)/nutritionWidget.json/?apiKey=\(API_KEY)")
         
         var request = URLRequest(url: url!,
                                 cachePolicy: .useProtocolCachePolicy,
@@ -51,6 +54,11 @@ class RecipeDetailsViewController: UIViewController {
                 }
             }
         }
+        
+        recipeName.text = recipe["title"] as? String
+        let imageURL = URL(string: recipe["image"] as! String)
+        recipeImage.af.setImage(withURL: imageURL!)
+        recipeInstructions.text = recipe["instructions"] as? String
 
         dataTask.resume()
         
