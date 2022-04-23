@@ -742,7 +742,6 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter recipe name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ocw-Pw-AhE">
                                 <rect key="frame" x="46" y="457" width="322" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1116,7 +1115,6 @@
     </scenes>
     <resources>
         <image name="app-logo" width="647" height="315"/>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="edit-icon" width="30" height="27"/>
         <image name="favor-icon" width="30" height="30"/>
         <image name="heart" catalog="system" width="128" height="109"/>

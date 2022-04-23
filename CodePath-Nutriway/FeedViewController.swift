@@ -38,6 +38,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.isDairy.text = dairyfree.stringValue == "1" ? "Yes" : "No"
         cell.isHealthy.text = healthy.stringValue == "1" ? "Yes" : "No"
         cell.isKeto.text = cheap.stringValue == "1" ? "Yes" : "No"
+        cell.recipeID = recipe["id"] as! Int
                 
         return cell
     }
