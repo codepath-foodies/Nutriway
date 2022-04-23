@@ -136,3 +136,8 @@ User
 For this week, we focused on setting up the necessary backend components and imagining some of the login and registration screen. Focus on storyboard and view controller design will follow next week.
 
 <img src='https://i.imgur.com/30igOIQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+### Milestone 3
+We've just about finished the core functionalities for our project. While we didn't implement some of the additional features, the app functions for its intended purpose and collects and gathers the necessary information.
+
+<img src='https://i.imgur.com/bbwxaG7.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
