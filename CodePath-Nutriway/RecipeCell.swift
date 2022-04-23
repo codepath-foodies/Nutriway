@@ -36,6 +36,10 @@ class RecipeCell: UITableViewCell {
         
     }
     
+    @IBAction func addIntake(_ sender: Any) {
+        
+    }
+    
     func addFavorite(){
         let favoritedRecipe = PFObject(className: "Favorites")
         favoritedRecipe["recipeId"] = recipeID
