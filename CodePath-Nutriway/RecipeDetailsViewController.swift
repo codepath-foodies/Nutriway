@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import Parse
 
 class RecipeDetailsViewController: UIViewController {
 
@@ -56,7 +57,7 @@ class RecipeDetailsViewController: UIViewController {
         }
         
         recipeName.text = recipe["title"] as? String
-        let imageURL = URL(string: recipe["image"] as! String)
+        let imageURL = URL(string: recipe["image"] as? String ?? "https://spoonacular.com/recipeImages/664288-556x370.jpg")
         recipeImage.af.setImage(withURL: imageURL!)
         recipeInstructions.text = recipe["instructions"] as? String
 
@@ -66,7 +67,30 @@ class RecipeDetailsViewController: UIViewController {
     
     
     @IBAction func addNutrition(_ sender: Any) {
+        let foodIntake = PFObject(className: "FoodIntakes")
+        if let number = Int(caloriesAmount.text?.components(separatedBy: CharacterSet.decimalDigits.inverted).joined() ?? "0") {
+            foodIntake["calories"] = String(number)
+        }
+        if let number = Int(fatAmount.text?.components(separatedBy: CharacterSet.decimalDigits.inverted).joined() ?? "0") {
+            foodIntake["fat"] = String(number)
+        }
+        if let number = Int(proteinAmount.text?.components(separatedBy: CharacterSet.decimalDigits.inverted).joined() ?? "0") {
+            foodIntake["protein"] = String(number)
+        }
+        if let number = Int(carbsAmount.text?.components(separatedBy: CharacterSet.decimalDigits.inverted).joined() ?? "0") {
+            foodIntake["carbs"] = String(number)
+        }
+        foodIntake["foodId"] = recipe["id"] as! Int
+        foodIntake["username"] = PFUser.current()!
         
+        foodIntake.saveInBackground { (success, error) in
+            if success{
+                print("Intake saved")
+            } else {
+                print("Error saving")
+            }
+        }
+        self.dismiss(animated: true, completion: nil)
     }
     
 
