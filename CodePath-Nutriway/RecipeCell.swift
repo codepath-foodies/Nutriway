@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class RecipeCell: UITableViewCell {
 
@@ -27,10 +28,41 @@ class RecipeCell: UITableViewCell {
         let tobeFavorited = !favorited
         if(tobeFavorited){
             self.setFavorite(true)
+            self.addFavorite()
         } else {
             self.setFavorite(false)
+            self.unFavorite()
         }
         
+    }
+    
+    func addFavorite(){
+        let favoritedRecipe = PFObject(className: "Favorites")
+        favoritedRecipe["recipeId"] = recipeID
+        favoritedRecipe["username"] = PFUser.current()!
+        favoritedRecipe["recipeName"] = self.recipeName.text
+        
+        favoritedRecipe.saveInBackground { (success, error) in
+            if success{
+                print("Post favorited")
+            } else {
+                print("Error favoriting")
+            }
+        }
+        
+    }
+    
+    func unFavorite(){
+        let query = PFQuery(className: "Favorites")
+        query.whereKey("recipeId", equalTo: recipeID)
+        query.whereKey("username", equalTo: PFUser.current())
+        query.findObjectsInBackground { (objects, error) in
+            if objects?.count != 0 {
+                for object in objects ?? []{
+                    object.deleteInBackground()
+                }
+            }
+        }
     }
     
     func setFavorite(_ isFavorited:Bool){
@@ -41,6 +73,7 @@ class RecipeCell: UITableViewCell {
             favoriteButton.setImage(UIImage(named:"favor-icon"), for: UIControl.State.normal)
         }
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
